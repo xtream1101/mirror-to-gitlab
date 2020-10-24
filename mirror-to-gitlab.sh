@@ -27,6 +27,7 @@ function mirror_repo {
   # Check if repo exists
   if [ -d $REPO_PATH ]; then
     echo "Fetching $1"
+    cd  ${REPO_PATH}
     git fetch --prune --quiet origin
     # Re set mirror url just in case its needed
     git remote set-url mirror ${MIRROR_GITLAB_URL}/${repo_name}
