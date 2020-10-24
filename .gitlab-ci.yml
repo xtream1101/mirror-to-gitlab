@@ -3,14 +3,13 @@ image: ubuntu:latest
 stages:
   - run
 
-.git_setup: &git_setup |
-    git config --global user.email "gitlab-ci"; git config --global user.name "gitlab-ci"
-
 mirror:
   stage: run
   only:
     - main
   script:
     - apt update; apt install -y git curl
-    - *git_setup
+    - git config --global user.email "gitlab-ci"; git config --global user.name "gitlab-ci"
     - ./mirror-to-gitlab.sh
+  only:
+    - triggers

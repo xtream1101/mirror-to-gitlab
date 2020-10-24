@@ -18,6 +18,12 @@ This script will mirror any git repo to a gitlab server. This repo is setup to r
   export MIRROR_GITLAB_URL=https://gitlab-ci-token:${MIRROR_GITLAB_TOKEN}@${MIRROR_GITLAB_DOMAIN}/<GROUP_NAME>
   # The group id you want the mirrors to save to
   export MIRROR_GITLAB_NAMESPACE_ID=<GROUP_ID>
+
+  # Optional
+  # Clone the repo into this directory, will use local dir if not set
+  export MIRROR_PATH=/foo/bar
+  # If set to anything, it will delete the locally cloned git repo
+  export MIRROR_CLEANUP=true
   ```
 
 ## Usage
