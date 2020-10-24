@@ -3,10 +3,8 @@ image: ubuntu:latest
 stages:
   - run
 
-.write_permission: &write_permission |
+.git_setup: &git_setup |
     git config --global user.email "gitlab-ci"; git config --global user.name "gitlab-ci"
-    url_host=`git remote get-url origin | sed -e "s/https:\/\/gitlab-ci-token:.*@//g"`
-    git remote set-url origin "https://gitlab-ci-token:${MIRROR_GITLAB_TOKEN}@${url_host}"
 
 mirror:
   stage: run
@@ -14,5 +12,5 @@ mirror:
     - main
   script:
     - apt update; apt install -y git curl
-    - *write_permission
+    - *git_setup
     - ./mirror-to-gitlab.sh
