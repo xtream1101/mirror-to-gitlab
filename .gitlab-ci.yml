@@ -12,4 +12,5 @@ mirror:
     - git config --global user.email "gitlab-ci"; git config --global user.name "gitlab-ci"
     - ./mirror-to-gitlab.sh
   only:
-    - triggers
+    - schedules
+    - web
