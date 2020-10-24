@@ -38,8 +38,10 @@ function mirror_repo {
   fi
 
   git push --quiet --prune --mirror mirror
-  # cd -
-  # [[ -z $MIRROR_CLEANUP ]] && rm -rf ${REPO_PATH}
+  cd -
+  if [ "$MIRROR_CLEANUP" = true ] ; then
+    rm -rf ${REPO_PATH}
+  fi
 }
 
 # Set defaults

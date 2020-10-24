@@ -1,6 +1,5 @@
-#https://github.com/a-maliarov/awesome-shields
+https://github.com/a-maliarov/awesome-shields
 https://git.svarun.dev/ytdl-org/youtube-dl
 https://gitee.com/mirrors/youtube-downloader
-#https://github.com/blackjack4494/yt-dlc
-
-#https://github.com/python/cpython
+https://github.com/blackjack4494/yt-dlc
+https://github.com/python/cpython

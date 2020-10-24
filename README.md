@@ -22,8 +22,8 @@ This script will mirror any git repo to a gitlab server. This repo is setup to r
   # Optional
   # Clone the repo into this directory, will use local dir if not set
   export MIRROR_PATH=/foo/bar
-  # If set to anything, it will delete the locally cloned git repo
-  export MIRROR_CLEANUP=true
+  # If set to true, it will delete the locally cloned git repo. Default is false
+  export MIRROR_CLEANUP=false
   ```
 
 ## Usage
