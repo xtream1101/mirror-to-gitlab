@@ -13,6 +13,6 @@ mirror:
   only:
     - main
   script:
-    - *write_permission
     - apt update; apt install git curl
+    - *write_permission
     - ./mirror-to-gitlab.sh
