@@ -14,7 +14,8 @@ This script will mirror any git repo to a gitlab server. This repo is setup to r
   # gitlab user access token, needs api & write repo permissions
   export MIRROR_GITLAB_TOKEN=<ACCESS_TOKEN_HERE>
   # URL that will be the new remote of the repo (minus the name). NOTE: NO `/` at the end
-  export MIRROR_GITLAB_URL=https://gitlab-ci-token:<ACCESS_TOKEN_HERE>@<SERVER_DOMAIN>/<GROUP_NAME>
+  export MIRROR_GITLAB_DOMAIN=<SERVER DOMAIN>
+  export MIRROR_GITLAB_URL=https://gitlab-ci-token:${MIRROR_GITLAB_TOKEN}@${MIRROR_GITLAB_DOMAIN}/<GROUP_NAME>
   # The group id you want the mirrors to save to
   export MIRROR_GITLAB_NAMESPACE_ID=<GROUP_ID>
   ```

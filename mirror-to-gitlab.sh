@@ -12,7 +12,7 @@ function mirror_repo {
     fi
     repo_name="${namespace}__${repo}"
 
-    curl --header "PRIVATE-TOKEN: ${MIRROR_GITLAB_TOKEN}" -H "Accept: application/json" -H "Content-type: application/json" -X POST -d "{ \"namespace_id\": \"${MIRROR_GITLAB_NAMESPACE_ID}\", \"name\": \"$repo_name\", \"visibility\": \"public\", \"description\": \"Mirror of ${1}\" }" "https://gitx.codes/api/v4/projects"
+    curl --header "PRIVATE-TOKEN: ${MIRROR_GITLAB_TOKEN}" -H "Accept: application/json" -H "Content-type: application/json" -X POST -d "{ \"namespace_id\": \"${MIRROR_GITLAB_NAMESPACE_ID}\", \"name\": \"$repo_name\", \"visibility\": \"public\", \"description\": \"Mirror of ${1}\" }" "https://${MIRROR_GITLAB_DOMAIN}/api/v4/projects"
 
     git clone --mirror $1
     cd  ${repo}.git
