@@ -1,5 +1,30 @@
+# Misc
 https://github.com/a-maliarov/awesome-shields
+https://github.com/FortAwesome/Font-Awesome
+
+
+# Books/Edu
+https://github.com/EbookFoundation/free-programming-books
+
+
+# Awesome Lists
+https://github.com/sindresorhus/awesome
+https://github.com/awesome-selfhosted/awesome-selfhosted
+https://github.com/n1trux/awesome-sysadmin
+
+
+# Tools
 https://git.svarun.dev/ytdl-org/youtube-dl
 https://gitee.com/mirrors/youtube-downloader
 https://github.com/blackjack4494/yt-dlc
+https://github.com/ohmyzsh/ohmyzsh
+https://github.com/romkatv/powerlevel10k
+
+
+# Development
 https://github.com/python/cpython
+https://github.com/twbs/bootstrap
+https://github.com/tensorflow/tensorflow
+https://github.com/facebook/react
+https://github.com/vuejs/vue
+https://github.com/jquery/jquery
