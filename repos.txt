@@ -23,9 +23,10 @@ https://github.com/romkatv/powerlevel10k
 
 # Development
 https://github.com/python/cpython
-# Issues with the bootstrap repo
-#https://github.com/twbs/bootstrap
 https://github.com/tensorflow/tensorflow
 https://github.com/facebook/react
 https://github.com/vuejs/vue
-https://github.com/jquery/jquery
+
+# Issues with these repos
+#https://github.com/twbs/bootstrap
+#https://github.com/jquery/jquery
